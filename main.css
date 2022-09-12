@@ -1,0 +1,263 @@
+/*                                                Color   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+:root {
+        --green: #00FF00;
+        --white: #ffffff;
+        --clay: #bbbbbb;
+        --cinza_claro: #fafafa;             /*bom para background claro*/
+        --cinza_escuro:#555;                /*bom para letra clara para combinar com o background a claro*/
+        --cinza_azulado_escuro: #212529;    /*bom para background escuro*/
+        --cinza_roxo: #899095;              /*bom para letra para combinar com o background escuro*/
+        --black: #000000;   
+        --blue: #0000ff;
+        --blue_medium: #2b2bbb;
+        --blue_medium2:#231c88;
+        --dark_blue: #000064;
+        --dark_blue2:#00026b;
+        --dark_blue_purple:#00013a;
+        --violet:#3c0055;
+        --purple:#4928a3;
+        --red:#fc0000;
+        --dark_red:#660000;
+        --cinza_pastel:#1d2024;
+        --navteste:linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 100%);
+        --background_full_color: linear-gradient(0deg, rgba(0,0,255,1) 0%, rgba(255,0,0,1) 60%, rgba(0,0,0,1) 100%);
+        --blue_gradient: linear-gradient(0deg, rgba(0,0,255,0.5) 0%, rgba(0,0,0,0.8) 100%);
+        --nav_white: linear-gradient(0deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0.25) 10%, rgba(255, 255, 255, 0.50) 30%, rgba(53, 53, 53, 0.60) 60%, rgba(0,0,0,0.9) 100%);
+        --nav_dark: linear-gradient(0deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 0.25) 10%, rgba(255, 255, 255, 0.50) 30%, rgba(53, 53, 53, 0.60) 60%, rgba(0,0,0,0.9) 100%);
+        }
+
+
+/*                                                thema: Light & Dark   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.light-theme {
+        --bg: var(--cinza_claro);
+        --fontColor: var(--cinza_escuro);
+        --navcolor: var(--white);
+        --testcolor: var(--black);
+        --rodape_color: var(--fontColor);
+        transition: 2s; 
+        }
+    
+.dark-theme {
+        --bg: var(--cinza_azulado_escuro);
+        --fontColor: var(--white);
+        --navcolor: var(--black);
+        --testcolor: var(--white);
+        --rodape_color: var(--white);
+        transition: 2s; 
+        }
+
+
+/*  
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+        html, body {
+                min-height: 100%;
+                }
+
+        body {
+                font-family: monospace;
+                background: var(--bg);
+                padding: 0;
+                margin: 0;
+                }
+
+        ul {
+                font-family: helvetica;
+                }
+
+        .list {
+                list-style: square;
+                }
+
+        * {
+                color: var(--fontColor);
+                font-family: helvetica;
+                }
+
+        .module {
+                max-width: 250px;
+                padding: 1rem;
+                }
+
+
+/*                                                navbar   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+nav {
+        padding: 1px;
+        }
+        
+.navbar-brand:hover { 
+        filter: invert(50%);
+        transition: 2s;
+        border: none;
+        }
+
+
+/*                                                rodape   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.rodape {
+        position: bottom;
+        width: 100%;
+        bottom: 0;
+        background:linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(0,0,255,1) 10%, rgba(255, 255, 255, 0) 14%);
+        text-align: none;
+        }
+
+.tr_rodape{
+        background:linear-gradient(0deg, rgba(255,0,0,1) 50%, rgba(0,0,255,1) 100%);
+        } 
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.div01 {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: rgb(37, 31, 131);
+        padding: 20px;
+        }
+  
+.div02 {
+        background-color: rgb(0, 2, 107);
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: rgb(255, 255, 255);
+        border: 2px outset rgb(0, 81, 255);
+        }
+  
+.homediv {
+        /*background-image: url(https://img.freepik.com/fotos-gratis/grupo-de-jovens-empresarios-trabalhando-no-escritorio_158595-5210.jpg?w=740&t=st=1661861277~exp=1661861877~hmac=0674511f093e3ab4aeaf8ae850f91372889a7d0948483384cbade298c37424d3);
+*/
+        background-image: url(https://sat02pap004files.storage.live.com/y4mureZn7Et4e81HZHmIIF67c8sjxPHooXrvNpDm-X6AMDBVfZagzQGbjmwpyOF34GQ1oJuyLrdCJAhDvvVcnVJnm2-zFh2Q7uiwSUZiXS8Uarf5irBzilxOd7dRiebxtRfjTNxgnRJ2Ra5oLLqbqhEBbSgMUNJaUQPFT_gCip_-o9BItfedjr_AO4nBfGykl3N?width=1920&height=1080&cropmode=none), url(https://www.ajetur.com.br/wp-content/uploads/2017/11/background-site.jpg);
+        opacity: 0.6, 0.1;
+        background-repeat: no-repeat;
+        background-position: center left, center top;
+        background-size:240px 135px, 100% 300px;
+        width: 100%;
+        height: 300px;
+        padding: 150px;
+        text-align: center left;
+
+}
+/*                                                entrevista   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.entrevista {
+        margin-left: 50px;
+        margin-right: 50px;
+        }
+/*                                                Botoes   
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+
+.btn_padrao{
+        position: top;
+        position: right;
+        background: none;
+        border-radius: 0%;
+        transition: 1s; 
+        border: none;
+        width:"20";
+        height:"20";
+        }
+
+
+
+        .btn_padrao:focus {
+                border: none;
+                }
+
+        .btn_padrao:hover { 
+                filter: invert(50%);
+                transition: 1s;
+                border: none;
+                }
+
+
+
+                .btn_padrao2{
+                        position: top;
+                        background: none;
+                        border-radius: 0%; 
+                        border: none;
+                        }
+
+
+
+.btn { 
+        position: top;
+        position: right;
+        border-radius: 0%;
+        border: none;
+        }
+
+
+
+        .btn:focus {
+                border: none;
+                }
+        
+        .btn:hover { 
+                filter: invert(50%);
+                transform: rotateY(180deg);
+                border: none;
+                transition: 1s;
+                }
+                
+                .light-theme.btn:hover { 
+                        filter: invert(50%);
+                        transform: rotateY(180deg);
+                        border: none;
+                        transition: 1s;
+                        }
+
+                .dark-theme .btn { 
+                        position: top;
+                        position: right;
+                        border-radius: 0%; 
+                        border: none;
+                        filter: invert(100%);
+                        transform: rotateY(180deg);
+                        }
+                
+                .dark-theme .btn_padrao { 
+                        position: top;
+                        position: right;
+                        border-radius: 0%; 
+                        border: none;
+                        filter: invert(100%);
+                        transition: 2s;
+                        } 
+
+                .dark-theme .home { 
+                        position: top;
+                        position: left;
+                        border-radius: 0%; 
+                        border: none;
+                        filter: invert(100%);
+                        transition: 2s;
+                        }
